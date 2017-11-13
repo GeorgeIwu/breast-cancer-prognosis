@@ -1,0 +1,10 @@
+@import helper._
+
+@flash.map {
+    case (key, value) => {
+        <div id="flasher" class="alert alert-@key alert-square" >
+            <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
+            <p class="text-center">@value</p>
+        </div>
+    }
+}

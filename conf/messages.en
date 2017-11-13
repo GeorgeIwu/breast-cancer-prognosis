@@ -1,0 +1,255 @@
+app.name=BankOnMobile
+
+
+
+
+
+
+app.common.full.name=Full Name
+app.common.address=Address
+app.common.email=Email
+app.common.phone.number=Phone Number
+app.common.gender=Gender
+app.common.salutation=Salutation
+app.common.dob=Date of Birth
+app.common.view=View
+app.common.search=Search
+app.common.start.date=Start Date
+app.common.end.date=End Date
+app.common.list=List
+app.common.download=Download
+app.common.holiday=Holiday
+
+app.dsas=Dsas
+app.dsa=Dsa
+
+suspended.financial.institution=Your Financial Institution has been suspended. Please contact your vendor for more details
+
+
+app.invalid.request=Invalid request. Please try again
+app.view.holiday=View Holiday
+
+app.account.opening=Account Opening
+app.account.opening.instant=Instant Account Opening
+app.account.opening.offline=Offline Account Opening
+app.account.opening.offline.message=Account has been logged. Your temporary account id is
+
+app.common.url.not.found=URL Not Found
+app.common.overall.statistics=Overall Statistics
+
+app.error.occured=System encountered an error
+app.system.holiday.not.allowed=System access on holidays is not allowed
+
+
+
+
+name=Name
+edit=Edit
+confirm=Confirmation
+email=Email
+fullname=Full Name
+firstname=First Name
+othername=Other Name
+middlename=Middle Name
+lastname=Last Name
+goback=Go Back
+logout=Logout
+password=Password
+username=Username
+error.technical=Technical Error, please Retry
+validate=Validate
+reset=Reset
+staff.id=Staff ID
+phonenumber1=Phone Number 1
+phonenumber2=Phone Number 2
+address=Address
+city=City
+state=State
+country=Country
+register=Register
+gender=Gender
+dob=Date of Birth
+maritalStatus=Marital Status
+nationality=Nationality
+stateOfOrigin=State of Origin
+genoType=Genotype
+department=Department
+app.dashboard=Dashboard
+app.login=Login
+app.create=Create
+app.update=Update
+app.edit=Edit
+app.create.device=Create Device
+app.edit.device=Edit Device
+app.create.user=Create models.User
+app.edit.user=Edit models.User
+app.create.holiday=Create Holiday
+app.edit.holiday=Edit Holiday
+
+app.view.device=View Device
+
+app.create.dsa=Create Dsa
+app.teller.till=Teller Till
+app.relationship.manager=Relationship Manager
+app.sol.id=Sol Id
+
+app.first.name=First Name
+app.middle.name=Middle Name
+app.last.name=Last Name
+app.staff.number=Staff Number
+app.username=Username
+app.password=Password
+app.email=Email
+app.phone.number=Phone Number
+app.enable.device=Enable Device
+app.disable.device=Disable Device
+app.unlink.device=Unlink Device
+app.link.device=Link Device
+app.view.user=View models.User
+app.insufficient.permission=Insufficient Permission
+app.fill.required.fields=Kindly fill all required fields
+
+app.method.not.found=Method Not Found
+
+
+app.user.not.found=models.User not found
+
+app.create.branch=Create Branch
+app.edit.branch=Edit Branch
+
+branch.name=Branch Name
+branch.code=Branch Code
+
+app.user=models.User
+app.users=Users
+save=Save
+app.devices=Devices
+app.device=Device
+app.list=List
+app.serviceTag=Service Tag
+app.group=Group
+app.holiday=Holiday
+app.report=Reports
+app.configuration=Configuration
+app.transaction=Transaction
+app.aco=Account Opening
+app.audit=Audit
+app.tracker=Tracker
+app.branch=Branch
+app.settings=Settings
+app.add.role=Add Role
+app.login.ok=Login Successful
+app.view.account=View Account
+app.otp.ok=Token Validation Successful
+app.otp.failed=Token Validation Failed
+app.bvn.ok=BVN Validation Successful
+app.bvn.failed=BVN Validation Failed
+app.aml.ok=models.User not blacklisted
+app.aml.failed=models.User blacklisted
+
+branch.saved=Branch Saved
+branch.updated=Branch Updated
+
+
+config.value=Config Value
+config.name=Config Name
+
+holiday.start.date=Start Date
+holiday.end.date=End Date
+holiday.saved=Holiday Saved
+
+
+system.holiday=System Holidays
+
+device.uuid=Unique ID
+device.brand=Brand
+device.model=Model
+device.enabled=Enabled
+device.disabled=Disabled
+device.saved=Device Information Saved
+device.updated=Device information Updated
+device.is.enabled=Device is enabled
+device.is.disabled=Device is disabled
+device.is.unlinked=Device is unlinked
+device.is.linked=Device is linked
+device.not.exists=Device identifier does not exists
+device.not.assigned.to.user=Device not assigned to user
+device.OS=OS
+device.not.authorized=Device is not authorized
+
+
+user.saved=models.User creation successful
+user.updated=models.User details updated
+user.role.added=models.User privileges updated
+user.is.enabled=models.User is enabled
+user.is.disabled=models.User is disabled
+
+account.is.enabled=Account is enabled
+account.is.not.enabled=Account is disabled
+
+account.not.exists=Account identifier does not exists
+account.not.validated.check.mail=Account not validated. Check your emails.
+account.not.enabled.contact.admin =Account is locked. Kindly contact Administrator
+account.successfully.validated=Account successfully validated
+account.settings.email.successful=Email successfully validated ({0})
+invalid.user.or.password=Invalid username or password
+youve.been.logged.out=You've been logged out
+error.sending.email=Error sending email
+error.sending.confirm.email=Error while sending confirmation mail
+error.email.already.exist=Email already exist
+error.username.already.exist=Username already exist
+error.serviceTag.already.exist=Service Tag already exist
+
+error.account.already.validated=Account already validated
+error.unknown.email=Unknown email
+error.confirm=Confirmation failed
+error.expiredresetlink=This password reset has expired.
+error.expiredmaillink=This mail change has expired.
+error.login.required=You need to login first
+error.session.timeout=Your session has ended. Kindly login again
+
+account.settings.password=Click OK to receive instructions by mail.
+account.settings.email=Enter your new email address. Click OK to receive instructions on this new mail.
+
+signin.signin=Sign In
+signin.ok=Login Ok
+signin.your.email=Your email address
+signin.your.password=Your password
+
+forgot.password=Forgot password ?
+
+signup.signup=Sign Up
+signup.successfull=Sign Up - Successful !
+signup.new=New ?
+signup.reset.password=Reset your password
+signup.generate.password=Generate a password
+signup.msg.created=You will receive a confirmation email soon. Check your email to activate your account.
+signup.valid.email=Invalid Email
+
+resetpassword=Reset Password
+resetpassword.mailsent=A mail has been sent, please check your mail.
+resetpassword.success=Your password has been reset.
+resetpassword.new.password=New password :
+
+changemail.mailsent=A mail has been sent, please check your mail.
+
+mail.confirm.subject=Welcome to PlayStartApp - Ask for confirmation
+mail.confirm.message=Welcome to PlayStartApp. <br> Click on this link : {0} to confirm your email.
+
+mail.welcome.subject=Welcome to PlayStartApp
+mail.welcome.message=Welcome to PlayStartApp. <br> Your account is validated. Enjoy !
+
+mail.reset.ask.subject=PlayStartApp - New password
+# Cannot use You've unescaped here, as the single quote stops the {0}
+mail.reset.ask.message=You asked for your password to be reset.  <br> Click on this link : {0} to change your password.
+
+mail.change.ask.subject=PlayStartApp - Validate email
+mail.change.ask.message=You asked for your email to be changed.  <br> Click on this link : {0} to validate your email.
+
+mail.reset.fail.subject=Account Access Attempted
+mail.reset.fail.message=You (or someone else) entered this email address when trying to change the password.  However, this email address is not on our list of registered users, and so the attempted password reset has failed.
+
+mail.reset.confirm.subject=PlayStartApp - New password
+mail.reset.confirm.message=Hello, <br><br> Your password has been reset.
+
+

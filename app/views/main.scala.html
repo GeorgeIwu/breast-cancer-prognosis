@@ -1,0 +1,159 @@
+@(title: String, scripts: Html = Html(""))(content: Html)
+
+@import play.api.Play.resource
+@import play.api.Play.current
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="icon" href="http://getbootstrap.com/favicon.ico">
+
+    <title>BranchConsole</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href='@routes.Assets.at("css/bootstrap.css")' rel="stylesheet">
+
+    <link href='@routes.Assets.at("css/font-awesome.min.css")' rel="stylesheet">
+    <link rel="stylesheet" href="@routes.Assets.at("vendor/ionicons/css/ionicons.min.css")">
+    <link rel="stylesheet" href="@routes.Assets.at("css/AdminLTE.min.css")">
+    <link rel="stylesheet" href="@routes.Assets.at("css/all-skins.css")">
+    <!-- jQuery 2.2.0 -->
+    <script src="@routes.Assets.at("vendor/jquery/jquery-2.2.0.min.js")"></script>
+            <!-- Bootstrap 3.3.6 -->
+        <script src="@routes.Assets.at("js/bootstrap.min.js")"></script>
+    <!-- AdminLTE App -->
+    <script src="@routes.Assets.at("js/app.min.js")"></script>
+
+
+    @*<link href='@routes.Assets.at("css/fileinput.min.css")' media="all" rel="stylesheet" type="text/css" />*@
+</head>
+
+
+
+
+@if(title != "Login"){
+<body class="skin-blue-light  layout-top-nav ">
+<div class="content-wrapper" style="min-height: 153px;">
+    <header class="main-header">
+        <nav class="navbar navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a href="../../index2.html" class="navbar-brand"><b>BCDS</b></a>
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="/">Home <span class="sr-only">(current)</span></a></li>
+                        <li @if(title.contains("Upload CSV")){ class="active" } ><a href="@routes.ApplicationController.newData">Upload New</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Data <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="@routes.ApplicationController.list">View List</a></li>
+                                <li class="divider"></li>
+                                <li><a href="@routes.ApplicationController.charts">Performance Charts</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="navbar-form navbar-left" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="navbar-search-input" placeholder="Search">
+                        </div>
+                    </form>
+                </div>
+                <!-- /.navbar-collapse -->
+                <!-- Navbar Right Menu -->
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                        <!-- User Account Menu -->
+                        <li class="dropdown user user-menu">
+                            <!-- Menu Toggle Button -->
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <!-- hidden-xs hides the username on small devices so only the image appears. -->
+                                <span class="hidden-xs">George Iwu</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <!-- Menu Footer-->
+                                <li class="user-footer">
+                                    <div class="pull-left">
+                                        <a href="#" class="btn btn-default btn-flat">Change Password</a>
+                                    </div>
+                                    <div class="pull-right">
+                                        <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-custom-menu -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+    </header>
+    <!-- Content Header (Page header) -->
+    <div class="container">
+
+        <section class="content-header">
+            <h1>
+                @title
+            </h1>
+            <ol class="breadcrumb">
+                <li><a href="#"><i class="fa fa-dashboard"></i> @title</a></li>
+                <!--<li><a href="#">Layout</a></li>-->
+                <!--<li class="active">Top Navigation</li>-->
+            </ol>
+        </section>
+
+        <!-- Main content -->
+        <section class="content">
+
+            <div class="box box-default">
+                <div class="box-header with-border">
+                    <h3 class="box-title">@title</h3>
+                </div>
+                <div class="box-body">
+                    @wflash()
+                    <br/>
+                    @content
+                </div>
+                <!-- /.box-body -->
+            </div>
+            <!-- /.box -->
+        </section>
+        <!-- /.content -->
+    </div>
+    <!-- /.container -->
+</div>
+
+
+
+
+
+</div>
+}else{
+<body style="width: 100% !important;height: 100% !important; background-color :rgba(92,38,132,0.7) !important">
+<div >
+    @content
+</div>
+
+}
+@scripts
+<script src="@routes.Assets.at("vendor/slimScroll/jquery.slimscroll.min.js")"></script>
+
+        <!-- Bootstrap core JavaScript
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+@(loginForm:Form[models.form.LoginForm])
+
+@import helper._
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link href='@routes.Assets.at("css/bootstrap.css")' rel="stylesheet">
+
+    <link href='@routes.Assets.at("css/font-awesome.min.css")' rel="stylesheet">
+    <link rel="stylesheet" href="@routes.Assets.at("vendor/ionicons/css/ionicons.min.css")">
+    <link rel="stylesheet" href="@routes.Assets.at("css/AdminLTE.min.css")">
+    <link rel="stylesheet" href="@routes.Assets.at("css/skin-black-light.css")">
+    <link rel="stylesheet" href="@routes.Assets.at("vendor/iCheck/all.css")">
+    <!-- jQuery 2.2.0 -->
+    <script src="@routes.Assets.at("vendor/jquery/jquery-2.2.0.min.js")"></script>
+            <!-- Bootstrap 3.3.6 -->
+        <script src="@routes.Assets.at("js/bootstrap.min.js")"></script>
+
+    <title>Data Analysis</title>
+
+</head>
+<body class="hold-transition login-page">
+<div class="login-box">
+    <div class="login-logo">
+        <a href="./"><b>BCDS</b></a>
+    </div>
+    <!-- /.login-logo -->
+    <div class="login-box-body">
+        <p class="login-box-msg">
+            @if(flash.containsKey("message")){
+            <div id='flasher' class='alert alert-$message_class alert-square'>
+                <button aria-hidden="true" data-dismiss="alert" class="close" type="button">&times;</button>
+        <p class='text-center'>@flash.get("message")</p>
+    </div>
+    }
+
+
+    </p>
+
+    <form action="@routes.ApplicationController.login" method="post">
+        <label for="username">Username</label>
+        <div class="form-group has-feedback">
+            <input type="text" id="username" class="form-control" name="username" placeholder="Username">
+            <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+        </div>
+        <div class="form-group has-feedback">
+            <label for="password">Password</label>
+            <input type="password" id="password" class="form-control" name="password" placeholder="Password">
+            <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+        </div>
+        <div class="row">
+            <div class="col-xs-8">
+                <div class="checkbox icheck">
+                    <label>
+                    </label>
+                </div>
+            </div>
+            <!-- /.col -->
+            <div class="col-xs-4">
+                <button type="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
+            </div>
+            <!-- /.col -->
+        </div>
+    </form>
+
+
+</div>
+<!-- /.login-box-body -->
+</div>
+<!-- /.login-box -->
+<script src="./html/js/jquery.js"></script>
+<!-- Bootstrap 3.3.6 -->
+<script src="./html/js/bootstrap.min.js"></script>
+</body>
+</html>

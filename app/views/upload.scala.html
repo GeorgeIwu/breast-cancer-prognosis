@@ -1,0 +1,28 @@
+
+
+@main("Upload CSV"){
+<div class="panel-body">
+    <p>@wflash()</p>
+    <form role="form" method="POST" enctype="multipart/form-data" action="@routes.ApplicationController.submitData()">
+        <div class="form-group has-feedback">
+            <label>File Name</label>
+            <input type="text" placeholder="Choose File Name" class="form-control " id="name" name="name">
+        </div>
+
+        <div class="form-group has-feedback">
+            <label>Purpose</label>
+            <select class="form-control" id="purpose" name="purpose">
+                <option>Train and Test</option>
+                <option>Test Only</option>
+            </select>
+        </div>
+
+        <div class="form-group has-feedback">
+            <label>File To Upload</label>
+            <input type="file" placeholder="Choose File" class="form-control " id="csvFile" name="csvFile">
+        </div>
+
+        <button type="submit" class="btn btn-sm btn-primary pull-right">Upload</button>
+    </form>
+</div>
+}

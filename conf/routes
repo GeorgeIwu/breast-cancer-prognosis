@@ -1,0 +1,29 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET         /                    controllers.ApplicationController.index()
+GET         /new                 controllers.ApplicationController.newData()
+GET         /list/:id            controllers.ApplicationController.listData(id: Long)
+GET         /list                controllers.ApplicationController.list()
+POST        /upload              controllers.ApplicationController.submitData()
+POST        /train               controllers.ApplicationController.processData()
+POST        /login               controllers.ApplicationController.login()
+GET         /charts              controllers.ApplicationController.charts
+GET         /process/:id         controllers.ApplicationController.process(id: Long)
+
+GET        /test               controllers.ApplicationController.test()
+GET        /testupload               controllers.ApplicationController.testupload()
+
+
+GET        /patientJSON          controllers.PatientController.patientJSON
+
+
+# Map static resources from the /public folder to the /assets URL path
+GET         /assets/*file        controllers.Assets.at(path="/public", file)
+GET         /assets/*file        controllers.Assets.versioned(path="/public", file)
+#GET         /doc/pending/:sortBy/:filter/:page  getDoc(sortBy: String, filter: String, page: Int)
+
+
+

@@ -1,0 +1,22 @@
+@(data:String)
+
+@main(data){
+
+    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+
+                    <div class=" col-sm-offset-1 col-sm-4">
+                        <label for="document">Document Name:</label>
+
+                        <input class="form-control" rows="5"  placeholder="Enter name for document " id="document" name="document" type="text" style="width: 290px !important;">
+                    </div>
+
+                    <div class="fileupload fileupload-new" data-provides="fileupload">
+                        <div class="input-append">
+                            <div class="uneditable-input span3"><i class="icon-file fileupload-exists"></i> <span class="fileupload-preview"></span></div><span class="btn btn-file"><span class="fileupload-new">Select file</span><span class="fileupload-exists">Change</span><input type="file" /></span><a href="#" class="btn fileupload-exists" data-dismiss="fileupload">Remove</a>
+                        </div>
+                    </div>
+    </div>
+
+
+}
+

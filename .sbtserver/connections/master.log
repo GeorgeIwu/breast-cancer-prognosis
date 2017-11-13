@@ -1,0 +1,28 @@
+New log file opened at Thu Jun 23 09:59:44 WAT 2016 by 7660@Sammi-El
+Taking next connection to: 57899
+New client attempting to connect on port: 57900-57899
+  Address = /192.168.8.114:57899
+This client on port 57900 has uuid bf757258-b667-479a-babb-91a45beac014 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-bf757258-b667-479a-babb-91a45beac014
+Taking next connection to: 57899
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 57899
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 57899
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 57899
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 57899
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 57899
+Checking to see if clients are empty...
+No non-daemon clients connected after 3 min. Shutting down.
+Server socket thread exiting.
+0 clients open, will close them...
+All client sockets have been closed.
+Closing the 7660@Sammi-El logs at Thu Jun 23 10:23:49 WAT 2016, goodbye.
